@@ -1,3 +1,9 @@
+Prerequisites:
+- MacOS
+- Docker Desktop
+- ~/.ssh/id_ed25519 ssh key
+- ~/.aws directory with config and credentials
+
 ```
 docker build . -t shell
 cd into-your-app-folder
