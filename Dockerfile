@@ -7,7 +7,7 @@ FROM gitpod/openvscode-server:1.61.0
 
 #FROM ubuntu:20.04
 USER root
-RUN apt-get -y update -q && apt-get install -y git curl unzip jq docker.io make build-essential tmux zlib1g-dev libssl-dev
+RUN apt-get -y update -q && apt-get install -y git curl unzip jq docker.io make build-essential tmux zlib1g-dev libssl-dev libffi-dev
 
 USER openvscode-server
 COPY shasum /bin/shasum
