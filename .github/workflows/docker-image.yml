@@ -24,3 +24,9 @@ jobs:
         # Password used to login docker registry
         password: ${{ secrets.DOCKER_HUB_PASSWORD }}
         # Docker registry server address
+    - name: Send Push Notification
+      if: ${{ success() }}
+      uses: techulus/push-github-action@1.0.0
+      env:
+        API_KEY: ${{ secrets.PUSH_NOTIFICATION_API_KEY }}
+        MESSAGE: "venkatamutyala/shell has been updated!"
