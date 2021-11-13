@@ -1,2 +1,5 @@
 terraform 1.0.10 
 awscli 2.2.42
+aws-iam-authenticator 0.5.3
+kubectl 1.21.2
+tmux 3.2
