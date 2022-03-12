@@ -21,5 +21,6 @@ COPY .tool-versions .tool-versions
 COPY setup.sh setup.sh
 RUN ["bash", "-c", "source $HOME/.asdf/asdf.sh; ./setup.sh"]
 RUN rm setup.sh
+RUN ["bash", "-c", "sudo ln -s /home/workspace/.asdf/shims/go /bin/go"]
 RUN code --install-extension golang.go
 
