@@ -1,6 +1,6 @@
 #
 
-FROM gitpod/openvscode-server:1.65.2
+FROM gitpod/openvscode-server:1.66.1
 
 #RUN # the installation process for software needed
 
